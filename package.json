@@ -1,0 +1,25 @@
+{
+  "name": "siebogjs",
+  "version": "1.0.0",
+  "description": "JavaScript based multiagent middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiebogJS/Default.git"
+  },
+  "author": "Aleksandar Lukić",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SiebogJS/Default/issues"
+  },
+  "homepage": "https://github.com/SiebogJS/Default#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "q": "^1.5.0",
+    "socket.io": "^2.0.3"
+  }
+}

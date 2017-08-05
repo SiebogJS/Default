@@ -1,0 +1,13 @@
+<div class="p-20 m-20">
+	<div  class="col-sm-6 mb-50" style="width: 50%; display: inline-block">
+		<div class="list-group table-bordered">
+			<label class="ta-mid thbc list-group-item">Agent Classes</label>
+			<div class="scrollable-panel">
+				<a class="list-group-item clickable" ng-repeat="agentClass in arc.agentClasses" ng-click="arc.newAgent(agentClass)">{{agentClass}}</a>
+			</div>
+		</div>
+	</div>
+	<div ui-view="agentsConsole" class="mb-50" style="width: 50% ;display: inline-block"></div>
+
+	<div ui-view="loggerConsole" class="logger-fix"></div>
+</div>

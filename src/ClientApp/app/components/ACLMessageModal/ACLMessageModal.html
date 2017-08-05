@@ -1,0 +1,103 @@
+<div class="modal-header">
+    <h3 class="modal-title">ACL Message</h3>
+</div>
+<div class="modal-body">
+    <form>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group input-group-sm mb-10">
+                    <span class="input-group-addon" id="performativeAddon">Performative:</span>
+                    <select id="performative" ng-options="performative for performative in ammc.performatives" ng-model="ammc.input.performative" class="form-control" aria-describedby="performativeAddon">
+                        <option value="">---</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group input-group-sm mb-10 fc-grey">
+                    <span class="input-group-addon" id="senderAddon">Sender:</span>
+                    <select id="sender" ng-options="agent for agent in ammc.running" ng-model="ammc.input.sender" class="form-control" aria-describedby="senderAddon">
+                        <option value="">---</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="input-group  mb-10">
+                    <span class="input-group-addon" id="receiversAddon">Receivers:</span>
+                    <oi-select oi-options="a for a in ammc.running"
+                               ng-model="ammc.input.receivers" multiple placeholder="Receivers" class="fc-grey">
+                    </oi-select>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group input-group-sm mb-10">
+                    <span class="input-group-addon" id="replyToAddon">Reply to:</span>
+                    <select id="replyTo" ng-options="agent for agent in ammc.running" ng-model="ammc.input.replyTo" class="form-control" aria-describedby="replyToAddon">
+                        <option value="">---</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="input-group input-group-sm mb-10">
+                    <span class="input-group-addon" id="langAddon">Language:</span>
+                    <input type="text" ng-model="ammc.input.language" class="form-control" aria-describedby="langAddon">
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="input-group input-group-sm mb-10">
+                    <span class="input-group-addon" id="encodeAddon">Encoding:</span>
+                    <input type="text" ng-model="ammc.input.encoding" class="form-control" aria-describedby="encodeAddon">
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="input-group input-group-sm mb-10">
+                    <span class="input-group-addon" id="ontologyAddon">Ontology:</span>
+                    <input type="text" ng-model="ammc.input.ontology" class="form-control" aria-describedby="ontologyAddon">
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="input-group input-group-sm mb-10">
+                    <span class="input-group-addon" id="protocolAddon">Protocol:</span>
+                    <input type="text" ng-model="ammc.input.protocol" class="form-control" aria-describedby="protocolAddon">
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="input-group input-group-sm mb-10">
+                    <span class="input-group-addon" id="conidAddon">Conversation ID:</span>
+                    <input type="text" ng-model="ammc.input.conversationId" class="form-control" aria-describedby="conidAddon">
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="input-group input-group-sm mb-10">
+                    <span class="input-group-addon" id="replyWithAddon">Reply with:</span>
+                    <input type="text" ng-model="ammc.input.replyWith" class="form-control" aria-describedby="replyWithAddon">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="input-group input-group-sm mb-10">
+                    <span class="input-group-addon" id="replyByAddon">Reply by:</span>
+                    <input type="text" ng-model="ammc.input.replyBy" class="form-control" aria-describedby="replyByAddon">
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="input-group input-group-sm mb-10">
+                    <span class="input-group-addon" id="contentAddon">Content:</span>
+                    <textarea style="resize: vertical" type="text" ng-model="ammc.input.content" class="form-control" aria-describedby="contentAddon"></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-success" ng-click="ammc.confirm()">Send ACL Message</button>
+    <button class="btn btn-warning" ng-click="ammc.cancel()">Cancel</button>
+</div>

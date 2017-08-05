@@ -1,0 +1,12 @@
+
+<div class="modal-header">
+    <h3 class="modal-title">Start new agent</h3>
+</div>
+<div class="modal-body brl form-group">
+    <label for="agentName">Runtime name for the new {{armc.agentClass}} agent?</label>
+    <input  class="form-control" id="agentName" ng-model="armc.agentName" ng-keyup="armc.keyFn($event)">
+</div>
+<div class="modal-footer">
+    <button class="btn btn-success" ng-click="armc.confirm()">Confirm</button>
+    <button class="btn btn-warning" ng-click="armc.cancel()">Cancel</button>
+</div>

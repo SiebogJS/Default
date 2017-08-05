@@ -1,0 +1,50 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.content{  }
+
+.footer {
+    bottom: 0px;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+}
+
+#Register, #Login {
+    width: 500px;
+    margin: 50px auto 75px auto;
+    background-color: #F7F7F7;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px #AFAFAF;
+}
+
+#RegisterButton, #LoginButton, #BackButton {
+    width: 370px;
+}
+
+.console-panel {
+    overflow: auto;
+    height: 300px;
+    width:100%;
+    background-color: #303030;
+}
+
+.scrollable-panel{
+    overflow: auto;
+    max-height: 300px;
+}
+
+.fc-grey {
+    color: #303030;
+}
+
+oi-select .select-search-list-item_selection {
+    cursor: pointer;
+    background: #303030;
+    border-color: #303030;
+}

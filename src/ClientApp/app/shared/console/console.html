@@ -1,0 +1,21 @@
+<div class="table table-bordered list-group">
+    <div class="ta-mid thbc list-group-item">
+        <label>{{title}} </label>
+        <button ng-if="handler.clear" ng-click="handler.clear()" class="btn btn-xs btn-danger fl-right">Clear</button>
+    </div>
+    <div class="console-panel" scroll-glue>
+        <table class="table table-condensed table-bordered">
+            <tbody>
+                <tr ng-repeat="item in content track by $index" class="tbbc">
+                    <td class="col-sm-12"> <span class="a-fix ">{{item}}</span></td>
+                    <td ng-if="handler.sendMessage">
+                        <span  ng-click="handler.sendMessage($index)" class="btn btn-xs btn-default glyphicon glyphicon-envelope hover"></span>
+                    </td>
+                    <td class="col-sm-1 ta-mid" ng-if="handler.removeAt">
+                        <span  ng-click="handler.removeAt($index)" class="btn btn-xs btn-danger">X</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

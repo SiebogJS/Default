@@ -1,0 +1,43 @@
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.ta-mid {
+    text-align: center;
+}
+
+.fl-right{
+    float: right;
+    clear: right;
+}
+
+.no-wrap{
+    white-space: nowrap;
+}
+
+.thbc {
+    background-color: #253c54;
+    color: white;
+}
+
+.logger-fix {
+    width: 100%;
+    display: inline-block;
+}
+
+.a-fix {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #0ce3ac;
+}
+
+.tbbc {
+    background-color: #303030;
+}
+
+.brl{
+    word-wrap: break-word;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <meta charset="UTF-8">
+        <title>Node Agent Environment</title>
+        <base href="/">
+
+        <link rel="shortcut icon" href="favicon.png"/>
+
+        <!-- <css> -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/util.css"/>
+        <link rel="stylesheet" href="css/margin.css">
+        <link rel="stylesheet" href="css/padding.css">
+        <link rel="stylesheet" href="css/select.min.css">
+
+        <!-- <libraries> -->
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="bower_components/angular-websocket/dist/angular-websocket.min.js"></script>
+        <script src="bower_components/angular-scroll-glue/src/scrollglue.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+        <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+        <script src="bower_components/oi.select/dist/select-tpls.min.js"></script>
+
+        <!-- <app> -->
+        <script type="application/javascript" src="app/app.module.js"></script>
+        <script type="application/javascript" src="app/app.routes.js"></script>
+
+        <!-- <modules> -->
+        <script type="application/javascript" src="app/components/agentRunner/agentRunner.module.js"></script>
+        <script type="application/javascript" src="app/shared/util/util.module.js"></script>
+        <script type="application/javascript" src="app/components/loggerConsole/loggerConsole.module.js"></script>
+        <script type="application/javascript" src="app/components/agentsConsole/agentsConsole.module.js"></script>
+        <script type="application/javascript" src="app/shared/console/console.module.js"></script>
+        <script type="application/javascript " src="app/components/ACLMessageModal/ACLMessageModal.module.js"></script>
+
+
+        <!-- <directives> -->
+        <script typee="application/javascript" src="app/shared/console/console.dir.js"></script>
+
+        <!-- <services> -->
+        <script type="application/javascript" src="app/components/agentRunner/agentRunner.rest.svc.js"></script>
+        <script type="application/javascript" src="app/components/agentRunner/agentRunner.ws.svc.js"></script>
+        <script type="application/javascript" src="app/components/agentRunner/modal/agentRunnerModal.svc.js"></script>
+        <script type="application/javascript" src="app/shared/util/util.svc.js"></script>
+        <script type="application/javascript" src="app/shared/console/console.svc.js"></script>
+        <script type="application/javascript " src="app/components/ACLMessageModal/ACLMessageModal.svc.js"></script>
+
+
+        <!-- <controllers> -->
+        <script type="application/javascript" src="app/components/agentRunner/agentRunner.ctrl.js"></script>
+        <script type="application/javascript" src="app/components/agentRunner/modal/agentRunnerModal.ctrl.js"></script>
+        <script type="application/javascript" src="app/components/loggerConsole/loggerConsole.ctrl.js"></script>
+        <script type="application/javascript" src="app/components/agentsConsole/agentsConsole.ctrl.js"></script>
+        <script type="application/javascript " src="app/components/ACLMessageModal/ACLMessageModal.ctrl.js"></script>
+
+
+    </head>
+    <body>
+    <div ui-view="header"></div>
+        <div class="container content">
+            <div ui-view="content" id="container"></div>
+        </div>
+    </body>
+</html>
